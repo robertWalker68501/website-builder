@@ -7,10 +7,12 @@ import Preview from './pages/Preview.tsx';
 import Pricing from './pages/Pricing.tsx';
 import Projects from './pages/Projects.tsx';
 import View from './pages/View.tsx';
+import Navbar from './components/Navbar.tsx';
 
 const App = () => {
   return (
     <div className=''>
+      <Navbar />
       <Routes>
         <Route
           path='/'
