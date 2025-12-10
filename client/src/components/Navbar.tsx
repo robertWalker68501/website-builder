@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import { Link, useNavigate } from 'react-router-dom';
 
+import { assets } from '../assets/assets.ts';
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ const Navbar = () => {
           className='flex items-center gap-2 text-2xl'
         >
           <img
-            src='src/assets/images/logo.png'
+            src={assets.logo}
             alt='Website Builder Logo'
             className='h-5 sm:h-7'
           />
@@ -23,7 +25,7 @@ const Navbar = () => {
 
         <div className='hidden items-center gap-8 transition duration-500 md:flex'>
           <Link to='/'>Home</Link>
-          <Link to='/project'>My Projects</Link>
+          <Link to='/projects'>My Projects</Link>
           <Link to='/community'>Community</Link>
           <Link to='/pricing'>Pricing</Link>
         </div>

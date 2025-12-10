@@ -50,7 +50,7 @@ const Home = () => {
           onChange={(e) => setInput(e.target.value)}
           className='w-full resize-none bg-transparent text-gray-300 outline-none'
           rows={4}
-          placeholder='Describe your presentation in details'
+          placeholder='Describe your website in detail...'
           required
         />
         <button className='ml-auto flex items-center gap-2 rounded-md bg-linear-to-r from-[#CB52D4] to-indigo-600 px-4 py-2'>
@@ -69,27 +69,27 @@ const Home = () => {
         <img
           className='max-w-28 md:max-w-32'
           src='https://saasly.prebuiltui.com/assets/companies-logo/framer.svg'
-          alt=''
+          alt='Framer logo'
         />
         <img
           className='max-w-28 md:max-w-32'
           src='https://saasly.prebuiltui.com/assets/companies-logo/huawei.svg'
-          alt=''
+          alt='Huawei logo'
         />
         <img
           className='max-w-28 md:max-w-32'
           src='https://saasly.prebuiltui.com/assets/companies-logo/instagram.svg'
-          alt=''
+          alt='Instagram logo'
         />
         <img
           className='max-w-28 md:max-w-32'
           src='https://saasly.prebuiltui.com/assets/companies-logo/microsoft.svg'
-          alt=''
+          alt='Microsoft logo'
         />
         <img
           className='max-w-28 md:max-w-32'
           src='https://saasly.prebuiltui.com/assets/companies-logo/walmart.svg'
-          alt=''
+          alt='Walmart logo'
         />
       </div>
     </section>
