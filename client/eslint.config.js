@@ -4,12 +4,10 @@ import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
 import { defineConfig, globalIgnores } from 'eslint/config';
-import tailwind from 'eslint-plugin-tailwindcss';
 import eslintPluginImport from 'eslint-plugin-import';
 
 export default defineConfig([
   globalIgnores(['dist']),
-  ...tailwind.configs['flat/recommended'],
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
@@ -42,10 +40,6 @@ export default defineConfig([
           alphabetize: { order: 'asc', caseInsensitive: true },
         },
       ],
-
-      // Optional Tailwind rule tweaks (can keep defaults)
-      // "tailwindcss/classnames-order": "warn",
-      // "tailwindcss/no-custom-classname": "off",
     },
   },
 ]);
